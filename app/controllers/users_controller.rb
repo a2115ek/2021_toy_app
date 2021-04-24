@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    @user = User.new
   end
 
   # GET /users/new
@@ -19,5 +20,18 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    @user = User.new
+  end
+  
+  def create
+    @user = User.new
+  end
+
+  def update
+    @user = User.new
+  end
+
+  def destroy
+    @user = User.new
   end
 end
